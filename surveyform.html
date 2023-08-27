@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1">
+		<title>Survey Form</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="surveystyle.css">
+	</head>
+	<body>
+		<form class="survey-form" method="POST" action="http://formsubmit.co/rxkshithxsree@gmail.com">	
+            <input type="hidden" name="_url" value="https://yourdomain.co/contact.html.">
+            <div class="container">
+                <h1>Mystic Campsite</h1>
+                <h4> (Camping doesn't have to mean just sleeping in a tent. It can mean being together as a family!)</h4>
+                  <h2>Survey Form</h2>
+              
+              <div class="steps">
+                  <div class="step current"></div>
+                  <div class="step"></div>
+                  <div class="step"></div>
+              </div>
+                  <div class="step-content current" data-step="1">
+                      <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+                    <div class="fact">
+                          <label for="email">Mail:</label>
+                          <input id="email" type="email" name="email" placeholder="Your Email" required>
+                      </div>
+                      
+                  <div class="fields">
+                
+                      <p>How would you rate our family camp?</p>
+                      <div class="rating">
+                          <input type="radio" name="rating" id="radio1" value="Very Unsatisfied">
+                          <label for="radio1">1</label>
+                          <input type="radio" name="rating" id="radio2" value="Unsatisfied">
+                          <label for="radio2">2</label>
+                          <input type="radio" name="rating" id="radio3" value="Neutral">
+                          <label for="radio3">3</label>
+                          <input type="radio" name="rating" id="radio4" value="Satisfied">
+                          <label for="radio4">4</label>
+                          <input type="radio" name="rating" id="radio5" value="Very Satisfied">
+                          <label for="radio5">5</label>
+                      </div>
+                      <div class="rating-footer">
+                          <span>Very Unsatisfied</span>
+                          <span>Very Satisfied</span>
+                      </div>				
+                  </div>
+                  <div class="buttons">
+                      <a href="#" class="btn" data-set-step="2">Next</a>
+                  </div>
+              </div>
+                  <!-- page 2 -->
+              <div class="step-content" data-step="2">
+                  <div class="fields">
+                    <p>Which activities did you like the most?</p>
+                    <div class="group">
+                        <label for="check1">
+                            <input type="checkbox" name="activities" id="check1" value="rock_climbing">
+                            Rock Climbing
+                        </label>
+                        <label for="check2">
+                            <input type="checkbox" name="activities" id="check2" value="rafting">
+                            Rafting
+                        </label>
+                        <label for="check3">
+                            <input type="checkbox" name="activities" id="check3" value="scuba_diving">
+                            Scuba Diving
+                        </label>
+                        <label for="check4">
+                            <input type="checkbox" name="activities" id="check4" value="hiking">
+                            Hiking
+                        </label>			
+                    </div>
+                      <p>How strong do you believe we ensure safety?</p>
+                      <div class="rating">
+                          <input type="radio" name="safety" id="radio10" value="Very Unlikely">
+                          <label for="radio10">1</label>
+                          <input type="radio" name="safety" id="radio11" value="Unlikely">
+                          <label for="radio11">2</label>
+                          <input type="radio" name="safety" id="radio12" value="Neutral">
+                          <label for="radio12">3</label>
+                          <input type="radio" name="safety" id="radio13" value="Likely">
+                          <label for="radio13">4</label>
+                          <input type="radio" name="safety" id="radio14" value="Very Likely">
+                          <label for="radio14">5</label>
+                      </div>
+                      <div class="rating-footer">
+                          <span>Very Unlikely</span>
+                          <span>Very Likely</span>
+                      </div>
+                     
+                  </div>
+                  <div class="buttons">
+                      <a href="#" class="btn alt" data-set-step="1">Prev</a>
+                      <a href="#" class="btn" data-set-step="3">Next</a>
+                  </div>
+              </div>
+              
+              <!-- page 3 -->
+              <div class="step-content" data-step="3">
+            
+            <p>Would you like to revisit us in the future?</p>
+            <div class="yesno">
+                    <label class="radio">
+                      <input type="radio" name="revisit">
+                      Yes
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="revisit" >
+                      No
+                    </label>
+                  </div>
+            
+                      <label for="comments">What do you suggest we must improve?</label>
+                      <div class="field">
+                          <textarea id="comments" name="comments" placeholder="Enter your comments ..."></textarea>
+                      </div>
+                  
+                  <div class="buttons">
+                      <a href="#" class="btn alt" data-set-step="2">Prev</a>
+                      <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+                  </div>
+              </div>   
+                </form>
+              </div>
+              <script src="surveyjs.js"></script>
+	</body>
+</html>
